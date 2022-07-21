@@ -1,0 +1,55 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;/*Hack para box model*/
+    background: url('/01-JS_DRUMKIT/fondo/cortina-mitchell.jpg');
+    background-size:cover;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px; /*1 rem equivale a 10px*/
+    font-family: 'Roboto Mono', monospace;
+}
+.keys{
+    display: flex;
+    min-height: 100vh;
+    justify-content:center;
+    align-items: center;
+
+}
+.key {
+    border: .4rem solid rgb(239, 19, 96);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.299);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+
+.centro{
+  font-size:4rem;
+  text-align: center;
+  color: white;
+}
+.copy{
+  color: white;
+}
